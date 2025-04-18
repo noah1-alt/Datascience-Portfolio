@@ -146,6 +146,36 @@ main {
     margin: 0;
 }
 
+/* Update .about-block to ensure centering */
+.about-block {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left; /* Override previous center alignment for text */
+    margin: 10px 0; /* Ensure spacing between blocks */
+}
+
+/* Add .about-text for left-aligned paragraphs */
+.about-text {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+
+/* Ensure .about-content centers the blocks */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+    max-width: 600px;
+    align-items: center; /* Center blocks horizontally */
+}
+
 /* Replace or add these styles in style.css */
 .project-description {
     background-color: #fff;
