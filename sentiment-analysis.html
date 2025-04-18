@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis & Topic Identification - Noah Mutunga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#projects" class="active">Projects</a></li>
+            <li><a href="index.html#about">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="project-detail">
+            <h1>Sentiment Analysis & Topic Identification</h1>
+            <img src="./assets/wordcloud.JPG" alt="Word Cloud of Sentiments" class="project-visual">
+            <div class="project-description">
+                <h2>Summary</h2>
+                <p class="description-text">The project aimed to analyze movie reviews to classify sentiments (positive or negative) and identify prevalent topics within each sentiment category. The dataset used was the IMDb Movie Reviews dataset containing 50,000 reviews. A sample of 5,000 reviews was analyzed to ensure computational efficiency while maintaining statistical relevance.</p>
+                
+                <h2>Key Insights</h2>
+                <p class="description-text">Topic Identification:</p>
+                <ul class="description-text">
+                    <li><strong>Positive Reviews</strong>: Topics included the general mood of discussions, recommendations, themes (e.g., family, love), humor, characters, and soundtracks.</li>
+                    <li><strong>Negative Reviews</strong>: Topics included criticism of acting, poor adaptations from source material, failed humor, specific plot points (e.g., death), and dissatisfaction with special effects.</li>
+                    <li><strong>Coherence Scores</strong>: Both positive and negative topics had moderate coherence (0.50-0.52), indicating reasonable interpretability.</li>
+                </ul>
+                
+                <h2>Sentiment Interpretability</h2>
+                <p class="description-text"><strong>Best Model</strong>: Logistic Regression with CountVectorizer was chosen as the final model due to its highest performance for negative reviews (0.83), ensuring critical feedback was captured efficiently.</p>
+                <p class="description-text"><strong>Baseline Comparison</strong>: The TextBlob rule-based model achieved only 69% accuracy with poor recall for negative reviews (0.45), highlighting the superiority of machine learning approaches.</p>
+                
+                <h2>Impact of the Project</h2>
+                <ul class="description-text">
+                    <li>Enables movie studios or streaming platforms to automatically classify reviews and prioritize addressing negative feedback.</li>
+                    <li>Identifies common themes in negative reviews (e.g., acting, plot, humor), providing actionable insights for improving future productions.</li>
+                    <li>Technical Contributions: Demonstrated the effectiveness of NMF for topic modeling in unstructured text data.</li>
+                    <li>Showed that simpler models (e.g., Logistic Regression) can outperform complex ones (e.g., LightGBM) for sentiment analysis when recall of negative reviews is prioritized.</li>
+                </ul>
+            </div>
+            <a href="https://github.com/noah1-alt/sentiment-analysis/blob/main/futureintern-ml-02.ipynb" class="github-link">GitHub Link</a>
+            <br>
+            <a href="index.html#projects" class="back-button">Go Back to Projects</a>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
