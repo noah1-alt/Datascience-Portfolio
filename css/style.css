@@ -146,7 +146,79 @@ main {
     margin: 0;
 }
 
-/* Project Detail Page Styles */
+/* Replace or add these styles in style.css */
+.project-description {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.project-description h2 {
+    font-family: 'Georgia, serif'; /* Different font for subheadings */
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.description-text {
+    font-family: Arial, sans-serif; /* Consistent font for descriptions */
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left; /* Left-align description text */
+    margin: 10px 0;
+}
+
+.description-text ul, .description-text ol {
+    padding-left: 20px; /* Ensure lists align nicely */
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0000FF;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, background-color 0.3s; /* Smooth transition for scaling and background */
+}
+
+.github-link:hover {
+    background-color: #333;
+    color: #0000FF;
+    transform: scale(1.1); /* Expand by 10% on hover */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0000FF;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #333;
+    color: #0000FF;
+}
+
+.project-visual {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .project-detail {
     background-color: #f0f5f5;
     padding: 40px;
@@ -156,56 +228,4 @@ main {
     margin: 20px 0;
     max-width: 600px;
     width: 100%;
-}
-
-.project-detail h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.project-detail p {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-/* Updated About Section Styles */
-.about {
-    background-color: #e0e0e0;
-    border: none;
-    padding: 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.about h1 {
-    font-size: 28px;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 70vh; /* Adjust this to control spacing of blocks */
-    width: 100%;
-    max-width: 600px;
-}
-
-.about-block {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.about-block p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 0;
 }
