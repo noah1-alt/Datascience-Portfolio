@@ -49,26 +49,35 @@ main {
     width: 100%;
 }
 
+/* Add to style.css */
 .intro {
     background-color: #FFFFFF;
     padding: 40px;
     border: 2px solid #ccc;
     border-radius: 10px;
     text-align: center;
-    margin: 20px 0;
+    margin: 40px 0; /* Increased margin for better separation from nav */
     max-width: 600px;
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.5s ease; /* For potential animation */
 }
 
 .intro p {
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased spacing between paragraphs */
 }
 
 .intro p:nth-child(2) {
     font-size: 22px;
     font-weight: bold;
+}
+
+.greeting {
+    font-style: italic;
+    font-size: 20px;
+    color: #555; /* Slightly darker gray for distinction */
 }
 
 .name {
@@ -77,24 +86,41 @@ main {
 }
 
 .highlight {
-    color: #ff6347;
+    color: #0000FF; /* Changed to blue to match buttons */
 }
 
 .work-button {
     background-color: #fff;
     border: 2px solid #ccc;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Slightly larger padding */
     text-decoration: none;
     color: #0000FF;
-    font-size: 16px;
+    font-size: 18px; /* Larger font size for emphasis */
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
     margin-bottom: 40px;
 }
 
 .work-button:hover {
     background-color: #333;
     color: #0000FF;
+    transform: scale(1.05); /* Subtle scale on hover */
+}
+
+/* Optional: Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    animation: fadeIn 1s ease forwards;
 }
 
 /* Projects Section Styles */
